@@ -1,25 +1,25 @@
 {
-  "name": "winston-slack-webhook-transport",
-  "version": "2.2.2",
-  "description": "A Slack transport for Winston 3 that logs to a channel via webhooks.",
-  "main": "slackHook.js",
-  "typings": "./slackHook.d.ts",
+  "name": "winston-mattermost-webhook-transport",
+  "version": "0.0.2",
+  "description": "A Mattermost transport for Winston 3 that logs to a channel via webhooks. Fork of winston-mattermost-webhook-transport",
+  "main": "mattermostHook.js",
+  "typings": "./mattermostHook.d.ts",
   "scripts": {
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TheAppleFreak/winston-slack-webhook-transport.git"
+    "url": "git+https://github.com/zlocate/winston-mattermost-webhook-transport.git"
   },
   "author": "TheAppleFreak",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TheAppleFreak/winston-slack-webhook-transport/issues"
+    "url": "https://github.com/zlocate/winston-mattermost-webhook-transport/issues"
   },
-  "homepage": "https://github.com/TheAppleFreak/winston-slack-webhook-transport#readme",
+  "homepage": "https://github.com/zlocate/winston-mattermost-webhook-transport#readme",
   "files": [
-    "slackHook.js",
-    "slackHook.d.ts",
+    "mattermostHook.js",
+    "mattermostHook.d.ts",
     "README.md",
     "LICENSE",
     "CHANGELOG.md"

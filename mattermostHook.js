@@ -3,7 +3,7 @@
 const Transport = require('winston-transport');
 const axios = require('axios').default;
 
-module.exports = class SlackHook extends Transport {
+module.exports = class MattermostHook extends Transport {
   constructor (opts) {
     super(opts);
 
@@ -15,7 +15,7 @@ module.exports = class SlackHook extends Transport {
     this.formatter = opts.formatter || undefined;
     this.unfurlLinks = opts.unfurlLinks || false;
     this.unfurlMedia = opts.unfurlMedia || false;
-    this.mrkdwn = opts.mrkdwn || false;
+   
     this.channel = opts.channel || '';
     this.username = opts.username || '';
     this.iconEmoji = opts.iconEmoji || '';
@@ -28,9 +28,6 @@ module.exports = class SlackHook extends Transport {
 
   log (info, callback) {
 		let payload = {
-      unfurl_links: this.unfurlLinks,
-      unfurl_media: this.unfurlMedia,
-      mrkdwn: this.mrkdwn,
       channel: this.channel,
       username: this.username,
       icon_emoji: this.iconEmoji,
